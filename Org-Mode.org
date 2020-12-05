@@ -148,4 +148,4 @@ fn main() {
 #+end_example
 
 \\
-More details at https://orgmode.org
+More details at [[https://orgmode.org][https://orgmode.org]]
