@@ -1,0 +1,151 @@
+* Org Mode
+
+** Headings
+
+*** Third Level Header
+
+**** Fourth Level Header
+
+: * Org Mode
+: ** Headings
+: *** Third Level Header
+: **** Fourth Level Header
+
+\\
+** Markup
+
+We can use /italics/, *bold*, ~code~, =monospace=.
+
+Paragraphs are separated by at least one empty line.
+
+Force line break with two backslashes.\\
+Here's the expected new line.
+
+-----
+That was a horizontal rule.
+
+#+begin_example org
+We can use /italics/, *bold*, ~code~, =monospace=.
+
+Paragraphs are separated by at least one empty line.
+
+Force line break with two backslashes.\\
+Here's the expected new line.
+
+-----
+That was a horizontal rule.
+
+#+end_example
+
+\\
+** Lists
+
+- unordered first item
+- second item
+  - sub item
+    1. ordered item
+    1. item 2
+- third item
+- forth item
+
+#+begin_example org
+- unordered first item
+- second item
+  - sub item
+    1. ordered item
+    1. item 2
+- third item
+- forth item
+#+end_example
+
+
+*** Definition Lists
+
+- term :: explanatory text
+- another term :: explanation
+
+: - term :: explanatory text
+: - another term :: explanation
+
+\\
+** Links
+
+This is an [[https://example.com][example link]].
+
+: This is an [[https://example.com][example link]].
+
+\\
+** Code Blocks
+
+**** Output
+
+#+begin_src emacs-lisp
+;; Block of code.
+(def	un sum (a b)
+  (+ a b))
+#+end_src
+
+#+begin_src rust
+fn main() {
+  println!("Example");
+}
+#+end_src
+
+: fn main() {
+:  println!("Example");
+: }
+
+
+**** Markup
+
+: #+begin_src emacs-lisp
+: ;; Block of code.
+: (defun sum (a b)
+:   (+ a b))
+: #+end_src
+
+: #+begin_src rust
+: fn main() {
+:   println!("Example");
+: }
+: #+end_src
+
+#+begin_example org
+: fn main() {
+:  println!("Example");
+: }
+#+end_example
+
+\\
+** Tables
+
+| Name  |  Phone | Age |
+|-------+--------+-----|
+| Peter |    555 |  23 |
+| Alice |   2222 |  33 |
+| Tom   |  77777 |  66 |
+
+
+|Name|Phone|Age
+|-
+|Peter |555 | 23|
+| Alice | 2222 |33|
+| Tom |||	  
+
+#+begin_example org
+| Name  |  Phone | Age |
+|-------+--------+-----|
+| Peter |    555 |  23 |
+| Alice |   2222 |  33 |
+| Tom   |  77777 |  66 |
+
+
+|Name|Phone|Age
+|-
+|Peter |555 | 23|
+| Alice | 2222 |33|
+| Tom |||	  
+#+end_example
+
+\\
+More details at https://orgmode.org

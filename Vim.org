@@ -1,0 +1,145 @@
+* Vim Cheat Sheet
+
+** Help
+
+- vimtutor :: Open vim tutorial in your terminal.
+- :help or <F1> :: Show help.
+
+\\
+** Exit
+
+- :q! :: Close file without saving.
+- :qa! :: Close all files without saving.
+- :wq :: Save changes and close file.
+- :w filename ::  Write the current file to disk using /filename/.
+
+\\
+** Navigate
+
+- j :: Move one line down.
+- k :: Move one line up.
+- h :: Move one character left.
+- l :: Move one character right.
+\\
+- w :: Move to the start of the next word.
+- e :: Move to the end of the word.
+- b :: Move to the beginning of the word.
+\\
+- 0 or ^ :: Move to the start of the line.
+- $ :: Move to the end of the line.
+\\
+- Ctrl-f :: Move one page forward.
+- Ctrl-b :: Mave one page backward.
+\\
+- gg or [[ :: Move to the start of the file.
+- G or ]] :: Move to the end of the file.
+\\
+- :N or N G :: Move to the /N/-th line.
+\\
+- % :: Move to the matching parenthesis or bracket.
+\\
+- Ctrl-o :: Move to the previous cursor position in the file.
+- Ctrl-i :: Move forward between previous cursor positions in the file.
+
+\\
+** Edit
+
+- u :: Undo changes.
+- U :: Undo all changes on line.
+- Ctrl-r :: Redo changes.
+\\
+- x :: Delete character.
+- X :: Delete character backwards.
+\\
+- y :: Copy selected text.
+  - yy :: Copy a line.
+  - y3w :: Copy three words.
+\\
+- d :: Delete selected text.
+  - d2d :: Delete two lines.
+  - dw :: Delete a word.
+  - d0 :: Delete to start of line.
+  - d$ :: Delete to end of line.
+  - dgg :: Delete to start of file.
+\\
+- p :: Paste /below/ the current line.
+- P :: Paste /above/ the current line.
+\\
+- r :: Replace the character under the cursor.
+\\
+- o :: Insert new line below.
+- O :: Insert new line above.
+
+\\
+** Search
+
+- /term :: Search /term/ forward.
+- ?term :: Search /term/ backward.
+\\
+- n :: Search for the same /term/ again.
+- N :: Search for the same /term/ in the opposite direction. 
+\\
+- :set ic :: Ignore case (not case-sensitive).
+- :set noic :: Case-sensitive search.
+\\
+- :set hls :: Highlight matches.
+- :set nohls :: Do not highlight matches.
+
+\\
+** Substitute / Replace
+
+- :s/from/to :: Replace the first occurence of /from/ on the line.
+\\
+- :N,Ms/from/to/g :: Replace all occurences of /from/ between lines /N/ and /M/.
+\\
+- :%s/from/to :: Replace the firth occurence of /from/ on each line of the file.
+- :%s/from/to/g :: Replace all occurences of /from/ in the file.
+- :%s/from/to/gc :: Replace all occurences of /from/ asking for the confirmation.
+
+\\
+** Mode
+
+- <ESC> :: Exit to the main mode.
+\\
+- i :: Enable /insert/ mode.
+  - Write and edit text.
+\\
+- R :: Enable /replace/ mode.
+  - Replace text under the cursor.
+\\
+- v :: Enable /visual/ mode.
+  - Select text using cursor or mouse.
+  - *v Motion :w filename* Select, then save selection as /filename/.
+
+\\
+** Patterns
+
+- [Number] Operator :: Execute /Operator/ action a /Number/ of times.
+  - 3j :: Move three lines down.
+  - 2x :: Delete 2 characters.
+\\
+- Operator [Number] Motion :: Execute /Operator/ action a /Number/ of times using /Motion/.
+  - d$ :: Delete to the end of the line.
+  - dgg :: Delete to the start of the file.
+  - d2w :: Delete 2 words.
+  - d4d :: Delete 4 lines.
+
+\\
+** Commands
+
+- :set nu :: Show line numbers.
+- :set nonu :: Hide line numbers.
+\\
+- :syntax on :: Enable syntax highlighting.
+- :syntax off :: Disable syntax highlighting.
+\\
+- :set list :: Show newline characters.
+- :set nolist :: Hide newline characters.
+\\
+- :!command :: Execute an external shell /command/.
+  - :!ls :: List current directory contents.
+  - :!rm filename :: Remove /filename/.
+\\
+- :r filename :: Insert contents of /filename/.
+- :r !command :: Insert output of a shell /command/.
+
