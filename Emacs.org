@@ -319,3 +319,5 @@ In an attempt to be useful for newbies, this page uses mixed terms, not only [[h
 | C-x v L    | | vc-print-root-log | Show commits history (=d= when on commit to diff, or =m= to mark) |
 | C-x v O    | | vc-log-outgoing   | Show a log of changes before push |
 | C-x v G    | | vc-ignore         | Ignore a file |
+| C-x v r    | B s | vc-retrieve-tag | Switch to a branch |
+
