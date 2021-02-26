@@ -302,7 +302,7 @@ In an attempt to be useful for newbies, this page uses mixed terms, not only [[h
 | M-!              | s-L | shell-command | Execute shell command |
 | M-:              | | eval-expression | Evaluate expression |
 
-*** Version Control (basic Git operations)
+*** Version Control (supports several systems, Git included)
 
 | Key Binding | Alternate Keys | M-x Command | Notes and Search Terms |
 |-
