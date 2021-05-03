@@ -147,5 +147,16 @@ fn main() {
 | Tom |||	  
 #+end_example
 
+
+| Key Binding | M-x Command                             | Notes                        |
+|-------------+-----------------------------------------+------------------------------|
+| C-c \vert   | org-table-create-or-convert-from-region | Initiate table               |
+| TAB         | org-table-next-field                    | Jump to the next cell        |
+| S-TAB       | org-table-previous-field                | Jump to the previous cell    |
+| RETURN      | org-table-next-row                      | Jump to the next row         |
+| M-RIGHT     | org-table-move-column                   | Move the column to the right |
+| S-M-RIGHT   | org-table-insert-column                 | Insert a new column          |
+
 \\
-More details at [[https://orgmode.org][https://orgmode.org]]
+More details at [[https://orgmode.org][https://orgmode.org]] and [[https://orgmode.org/worg/orgcard.html][Org-Mode Reference Card]].
+
