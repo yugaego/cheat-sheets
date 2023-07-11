@@ -21,11 +21,11 @@ This is a useful combination that /cancels the current command input/.
 |-
 | C-h t  | F1 t         | help-with-tutorial | Open Emacs tutorial |
 | C-h ?  | C-h C-h, F1  | help-for-help      | Help me with the Help |
-| C-h r  | F1-r         | info-emacs-manual | Open/show Emacs docs in Info mode |
-| C-h v  | F1-v         | describe-variable  | Explain variable |
-| C-h f  | F1-f         | describe-function  | Explain function |
-| C-h k  | F1-k | describe-key | Explain pressed keys combination/binding |
-| C-h a  | F1-a | apropos-command | Show commands that match word/words/regexp |
+| C-h r  | F1 r         | info-emacs-manual | Open/show Emacs docs in Info mode |
+| C-h v  | F1 v         | describe-variable  | Explain variable |
+| C-h f  | F1 f         | describe-function  | Explain function |
+| C-h k  | F1 k | describe-key | Explain pressed keys combination/binding |
+| C-h a  | F1 a | apropos-command | Show commands that match word/words/regexp |
 
 *** Info Mode
 
