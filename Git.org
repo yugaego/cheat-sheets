@@ -1,0 +1,37 @@
+* Git Cheat Sheet
+
+** Help
+- git <verb> --help :: Note that 'help' is also a <verb>.
+- git <verb> -h :: List the most commonly used commands.
+- man git-<verb> :: Open a man page.
+- git help <verb> :: Optional command.
+
+** Concepts
+- Working tree :: Particular version of project files.
+- Staging area (index) :: Project files modifications.
+- ~.git~ directory (repository) :: Contains /Git/ metadata and object database.
+
+** File States
+- Untracked :: File is not tracked by /Git/.
+- Committed (Unmodified) :: File (changes) stored to local database.
+- Modified :: Changes not added to local database.
+- Staged :: Changes marked to go into the next commit.
+
+** Config
+- git config --global user.name "Some Name"
+- git config --global user.email "example@example.com"
+- git config --list --show-origin
+
+** Basic Commands
+- git init :: Create or re-initialize /repository/.
+- git add :: Add changes to the /index/.
+- git commit :: Record changes to the /repository/.
+- git status :: Show the /working tree/ status.
+- git diff :: Show changes.
+
+** Additional Resources
+- [[https://git-scm.com/book][Pro Git Book]]
+- [[https://git-scm.com/docs/user-manual#glossary][Git Glossary]]
+- [[https://git-scm.com/docs/user-manual#git-quick-start][Git Quick Reference]]
+- [[https://git-scm.com/docs/gittutorial][man gittutorial]]
+- [[https://git-scm.com/docs/giteveryday][man giteveryday]]
