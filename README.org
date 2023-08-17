@@ -3,4 +3,5 @@ This repository contains several cheat sheets:
 - Emacs :: Key bindings starter kit.
 - Org-mode and Markdown :: Comparison of formatting basics.
 - Vim :: Essentials.
+- Git :: Starter kit and extra commands.
 
