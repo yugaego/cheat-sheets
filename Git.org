@@ -35,3 +35,15 @@
 - [[https://git-scm.com/docs/user-manual#git-quick-start][Git Quick Reference]]
 - [[https://git-scm.com/docs/gittutorial][man gittutorial]]
 - [[https://git-scm.com/docs/giteveryday][man giteveryday]]
+
+
+** Extra Commands
+
+*** Tags
+- git tag -l :: List tag names.
+- git tag -n3 :: List tags with 3 lines of message.
+- git tag -a v1.0.0 -m "Some message" :: Add tag with a message.
+- git tag -d v1.0.0 :: Delete local tag by the name.
+- git push --tags :: Push tags to remote repository.
+- git push -d origin v1.0.0 :: Delete remote tag.
+- git push origin :refs/tags/v1.0.0 :: Delete remote tag explicitly.
