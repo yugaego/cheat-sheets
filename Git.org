@@ -39,6 +39,19 @@
 
 ** Extra Commands
 
+*** Logs
+- git log [-​-name-status | -​-stat] :: Output commit logs with changed files.
+- git log HEAD​^​..HEAD :: Output the last commit log.
+- git log main.​.dev :: Output commits in ~dev~ not present in ~main~.
+- git log main.​..dev :: Output all different commits between branches.
+- git log -​-since="2023-08-01" [-​-until="2023-08-30"] [-​- <filename>] :: Output
+  logs in a date range.
+- git log [-​-reverse] [-​-date=short | -​-oneline] [-​-graph] [-<number>] :: Logs
+  quick review convenience options.
+- git log -p [<filename>] :: Output commit diffs as well.
+- git log -​-follow <filename> :: Show commits that changed <filename>.
+- git log [-​-decorate=full] [-​-all] :: Extended /refs/-related info.
+
 *** Tags
 - git tag -l :: List tag names.
 - git tag -n3 :: List tags with 3 lines of message.
