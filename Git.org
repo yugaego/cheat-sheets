@@ -3,7 +3,7 @@
 ** Starter Kit
 
 *** Help
-- git <verb> --help :: Display help information.
+- git <verb> -​-help :: Display help information.
 - git <verb> -h :: List the most commonly used options.
 
 *** Concepts
@@ -18,9 +18,9 @@
 - Staged :: Changes marked to go into the next commit.
 
 *** Config
-- git config --global user.name "Some Name"
-- git config --global user.email "example@example.com"
-- git config --list --show-origin
+- git config -​-global user.name "Some Name"
+- git config -​-global user.email "example@example.com"
+- git config -​-list -​-show-origin
 
 *** Basic Commands
 - git init :: Create or re-initialize /repository/.
@@ -44,6 +44,6 @@
 - git tag -n3 :: List tags with 3 lines of message.
 - git tag -a v1.0.0 -m "Some message" :: Add tag with a message.
 - git tag -d v1.0.0 :: Delete local tag by the name.
-- git push --tags :: Push tags to remote repository.
+- git push -​-tags :: Push tags to remote repository.
 - git push -d origin v1.0.0 :: Delete remote tag.
 - git push origin :refs/tags/v1.0.0 :: Delete remote tag explicitly.
