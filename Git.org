@@ -10,6 +10,12 @@
 - Working tree :: Particular version of project files.
 - Staging area (index) :: Project files modifications.
 - ~.git~ directory (repository) :: Contains /Git/ metadata and object database.
+- commit :: A single point in the /Git/ history.
+- branch :: A line of development.
+- HEAD :: The tip (the most recent commit) of the current branch.
+  - HEAD^ :: Parent of HEAD.
+  - HEAD^^ :: Grandparent of HEAD.
+  - HEAD~3 :: Great grandparent of HEAD.
 
 *** File States
 - Untracked :: File is not tracked by /Git/.
